@@ -1,0 +1,509 @@
+81	trupthi	tre123@gmail.com	8765056789	DS	DND	17-09-2021	10am
+83	saundarya	saundra@gmail.com	9004056789	AI	DND	15-09-2021	10am
+86	arjun	arjun@gmail.com	9123456789	DS	DND	17-09-2021	10am
+88	samantha	sam123@gmail.com	8765056789	FSD	DND	15-09-2021	10am
+90	gemini	gemini@gmail.com	8765056712	DS	DND	17-09-2021	4pm
+91	narayan	nar234@gmail.com	8765076234	AI	DND	17-09-2021	10am
+93	rashmika	rashmika@gmail.com	8765676234	DS	DND	15-09-2021	10am
+94	tapsee	tapsee@gmail.com	8765312345	AI	DND	17-09-2021	10am
+97	bhargavi	bhargavi@gmail.com	8888876543	AI	DND	15-09-2021	10am
+99	tamanna	tamanna@gmail.com	9848576234	AI	DND	17-09-2021	4pm
+102	tom	shaylee_waelchi@yahoo.com	9876543213	DS	DND	17-09-2021	10am
+104	kiljon	mertie_corwin@hotmail.com	98765456789	FSD	DND	15-09-2021	4pm
+108	mcdonalds	ervin.hammes@gmail.com	91111119191	DS	DND	17-09-2021	10am
+109	mike	frieda61@gmail.com	8282828262	AI	DND	15-09-2021	10am
+112	tanjiro	malvina.wolf28@yahoo.com	9898376290	AI	DND	17-09-2021	4pm
+116	Tom	filiberto61@hotmail.com	7229912990	 PY	DND	15-09-2021	10am
+118	micheal noddy	rico_wyman@yahoo.co	722299292	FSD	DND	17-09-2021	4pm
+120	Lokesh	lavern.schuppe@yahoo.com	6525167289	 DS	DND	15-09-2021	10am
+122	Nadeem	dillon.corkery@hotmail.com	7654382828	FSD	DND	17-09-2021	10am
+124	Rahul	abel78@yahoo.com	8899776655	 FSD	DND	17-09-2021	10am
+128	ajay	ajay2@gmail.com	1236213548	FSD	DND	15-09-2021	10am
+131	bhagyashree	bhagyashree@gmail.com	3246485316	PY	DND	17-09-2021	10am
+133	snehal	sne@gmail.com	3534556988	FSD	DND	15-09-2021	4pm
+134	subodh	sddf4@gmail.com	4588995641	BD	DND	17-09-2021	10am
+138	raghav	raghav8@gmail.com	9993574862	AI	DND	17-09-2021	4pm
+139	ninad	ninad@gmail.com	3571239412	BD	DND	15-09-2021	10am
+141	sanju	sanj88@gmail.com	1232559866	AI	DND	17-09-2021	4pm
+142	ankita	arnki52gmail.com	2597722581	FSD	DND	17-09-2021	10am
+144	sanjivani	sanj@gmail.com	9125658968	AI	DND	15-09-2021	10am
+146	sonali	sonali@gmail.com	3677748698	DS	DND	17-09-2021	4pm
+148	shree	shree897@gmail.com	5125874569	DS	DND	17-09-2021	10am
+149	sushil	sushil7@gmail.com	1111365326	BD	DND	15-09-2021	4pm
+150	sagar	sagar@gmail.com	2336888145	FSD	DND	15-09-2021	10am
+Time taken: 20.919 seconds, Fetched: 71 row(s)
+hive> 
+    > SELECT e.id,e.name,e.email,e.mobile,e.course,b.joining_date,b.week_day,b.day,b.time FROM enroll e JOIN batch b ON(e.id=b.id);
+Query ID = root_20221119094949_5b8cbb86-f229-4830-b5ac-3f97d21e0ee5
+Total jobs = 1
+Execution log at: /tmp/root/root_20221119094949_5b8cbb86-f229-4830-b5ac-3f97d21e0ee5.log
+2022-11-19 09:49:33	Starting to launch local task to process map join;	maximum memory = 119537664
+2022-11-19 09:49:34	Dump the side-table for tag: 1 with group count: 51 into file: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-49-29_983_3897667220638710163-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile21--.hashtable
+2022-11-19 09:49:34	Uploaded 1 File to: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-49-29_983_3897667220638710163-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile21--.hashtable (2532 bytes)
+2022-11-19 09:49:34	End of local task; Time Taken: 1.252 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0056, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0056/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0056
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-11-19 09:49:44,106 Stage-3 map = 0%,  reduce = 0%
+2022-11-19 09:49:49,380 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.3 sec
+MapReduce Total cumulative CPU time: 1 seconds 300 msec
+Ended Job = job_1668868817878_0056
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.3 sec   HDFS Read: 13526 HDFS Write: 3484 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 300 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD	16-09-21	WD	Monday	10am
+6	Maneesh	maneesh@gmail.com	9963555228	BD	16-09-21	WD	Monday	10am
+11	Kruthin	kruthin@ymail.com	7459032446	BD	18-09-21	WD	Wednesday	4pm
+13	Nikhil	nikhil@gmail.com	8765003641	PY	21-09-21	WE	Saturday	10am
+16	Harinath	harinath@gmail.com	7656349012	BD	16-09-21	WD	Monday	10am
+17	Harish	hariish@gmail.com	9007487654	AI	18-09-21	WD	Wednesday	4pm
+19	Bindu	bindu@gmail.com	9007483120	PY	21-09-21	WE	Saturday	10am
+22	Praveen	praveen@gmail.com	9988775632	FSD	16-09-21	WD	Monday	10am
+23	Anish	anish@gmail.com	9987334456	AI	18-09-21	WD	Wednesday	4pm
+26	trupti	tc@gmail.com	9587632584	DS	21-09-21	WE	Saturday	10am
+30	neha	nehaghosh@gmail.com	9874563212	BD	16-09-21	WD	Monday	10am
+32	surya	sdev@gmail.com	9988647512	AI	18-09-21	WD	Wednesday	4pm
+36	sameer	sam678@gmail.com	1986984752	FSD	16-09-21	WD	Monday	10am
+40	rajiv	raj8@gmail.com	2265998745	DS	16-09-21	WD	Monday	10am
+47	archita	archusen@gmail.com	2123113322	BD	16-09-21	WD	Monday	10am
+54	Aniket	fdeee@gamil.com	9879700067	PY	18-09-21	WD	Wednesday	4pm
+64	Anil	fdeeede@gamil.com	9879700047	PY	21-09-21	WE	Saturday	10am
+65	kiran	aassd21@gamil.com	9979778567	FSD	16-09-21	WD	Monday	10am
+75	Anukul	fdasede@gamil.com	9879711047	PY	18-09-21	WD	Wednesday	4pm
+76	santosh	santoshkumar@gamil.com	9133508789	BD	21-09-21	WE	Saturday	10am
+78	krishna	krishna@gmail.com	7890609876	DS	16-09-21	WD	Monday	10am
+80	madhu	madhu123@gmail.com	8678567887	BD	18-09-21	WD	Wednesday	4pm
+82	sravanthi	srav123@gmail.com	8765056767	DS	21-09-21	WE	Saturday	10am
+84	pawan	pawan@gmail.com	8765321789	DS	16-09-21	WD	Monday	10am
+85	jasmin	jasmin@gmail.com 	9765056123	PY	18-09-21	WD	Wednesday	4pm
+87	kajal	kajal@gmail.com	8767898760	AI	21-09-21	WE	Saturday	10am
+89	santhosh	kumar@gmail.com	9095056789	FSD	16-09-21	WD	Monday	10am
+92	jawali	jawali@gmail.com	9078676234	AI	18-09-21	WD	Wednesday	4pm
+95	prabhas	prabhas@gmail.com	9085076234	PY	21-09-21	WE	Saturday	10am
+96	malliswari	malli@gmail.com	8765076678	DS	16-09-21	WD	Monday	10am
+98	vijay	vijay@gmail.com	9865076234	FSD	18-09-21	WD	Wednesday	4pm
+100	rohithsharma	hitman@gmail.com	9026426426	BD	21-09-21	WE	Saturday	10am
+101	kareem	kareemv46@gmail.com	9876543212	BD	16-09-21	WD	Monday	10am
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	18-09-21	WD	Wednesday	4pm
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	21-09-21	WE	Saturday	10am
+107	Hercules	sigurd_schmidt38@yahoo.com	6239097648	BD	16-09-21	WD	Monday	10am
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	18-09-21	WD	Wednesday	4pm
+115	sasuke	josiane.steuber@hotmail.com	9002289922	PY	16-09-21	WD	Monday	10am
+117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY	18-09-21	WD	Wednesday	4pm
+119	faiz shaik	erin37@hotmail.com	8909090909	 FSD	21-09-21	WE	Saturday	10am
+121	Sameer	deondre71@hotmail.com	8765432190	 AI	16-09-21	WD	Monday	10am
+123	harsha	cody.beer@yahoo.com	9988776655	DS	18-09-21	WD	Wednesday	4pm
+125	ravi	trudie49@yahoo.com	7289890976	 DS	21-09-21	WE	Saturday	10am
+126	santosh	san@gmail.com	9587632522	DS	16-09-21	WD	Monday	10am
+130	nehal	nehal@gmail.com	9874555212	BD	18-09-21	WD	Wednesday	4pm
+132	sudhir	sud@gmail.com	9988647112	AI	21-09-21	WE	Saturday	10am
+135	rutvika	rut@gmail.com	3336325875	PY	16-09-21	WD	Monday	10am
+136	sumedh	sum@gmail.com	1789984752	FSD	18-09-21	WD	Wednesday	4pm
+137	rahil	rahil@gmail.com	8466998898	BD	21-09-21	WE	Saturday	10am
+140	rajesh	rajesh@gmail.com	2278698745	DS	16-09-21	WD	Monday	10am
+143	rushali	rush@gmail.com	1233326545	FSD	18-09-21	WD	Wednesday	4pm
+Time taken: 22.076 seconds, Fetched: 51 row(s)
+hive> 
+    > SELECT e.id,e.name,e.email,e.mobile,e.course,b.joining_date,b.week_day,b.day,b.time FROM enroll e JOIN batch b ON(e.id=b.id) where b.day='Saturday';
+Query ID = root_20221119094949_13196a31-6f19-4df3-8275-6010ccf30021
+Total jobs = 1
+Execution log at: /tmp/root/root_20221119094949_13196a31-6f19-4df3-8275-6010ccf30021.log
+2022-11-19 09:49:55	Starting to launch local task to process map join;	maximum memory = 119537664
+2022-11-19 09:49:56	Dump the side-table for tag: 1 with group count: 14 into file: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-49-52_116_6083542465957088782-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile31--.hashtable
+2022-11-19 09:49:56	Uploaded 1 File to: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-49-52_116_6083542465957088782-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile31--.hashtable (769 bytes)
+2022-11-19 09:49:56	End of local task; Time Taken: 1.036 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0057, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0057/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0057
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-11-19 09:50:04,755 Stage-3 map = 0%,  reduce = 0%
+2022-11-19 09:50:13,914 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.16 sec
+MapReduce Total cumulative CPU time: 1 seconds 160 msec
+Ended Job = job_1668868817878_0057
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.16 sec   HDFS Read: 13838 HDFS Write: 968 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 160 msec
+OK
+13	Nikhil	nikhil@gmail.com	8765003641	PY	21-09-21	WE	Saturday	10am
+19	Bindu	bindu@gmail.com	9007483120	PY	21-09-21	WE	Saturday	10am
+26	trupti	tc@gmail.com	9587632584	DS	21-09-21	WE	Saturday	10am
+64	Anil	fdeeede@gamil.com	9879700047	PY	21-09-21	WE	Saturday	10am
+76	santosh	santoshkumar@gamil.com	9133508789	BD	21-09-21	WE	Saturday	10am
+82	sravanthi	srav123@gmail.com	8765056767	DS	21-09-21	WE	Saturday	10am
+87	kajal	kajal@gmail.com	8767898760	AI	21-09-21	WE	Saturday	10am
+95	prabhas	prabhas@gmail.com	9085076234	PY	21-09-21	WE	Saturday	10am
+100	rohithsharma	hitman@gmail.com	9026426426	BD	21-09-21	WE	Saturday	10am
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	21-09-21	WE	Saturday	10am
+119	faiz shaik	erin37@hotmail.com	8909090909	 FSD	21-09-21	WE	Saturday	10am
+125	ravi	trudie49@yahoo.com	7289890976	 DS	21-09-21	WE	Saturday	10am
+132	sudhir	sud@gmail.com	9988647112	AI	21-09-21	WE	Saturday	10am
+137	rahil	rahil@gmail.com	8466998898	BD	21-09-21	WE	Saturday	10am
+Time taken: 23.932 seconds, Fetched: 14 row(s)
+hive> 
+    > SELECT e.id,e.name,e.email,e.mobile,e.course,b.joining_date,b.week_day,b.day,b.time FROM enroll e JOIN batch b ON(e.id=b.id) where b.day='Wednesday';
+Query ID = root_20221119095050_145c33b1-0470-4d78-a17f-04c4977ce8a2
+Total jobs = 1
+Execution log at: /tmp/root/root_20221119095050_145c33b1-0470-4d78-a17f-04c4977ce8a2.log
+2022-11-19 09:50:19	Starting to launch local task to process map join;	maximum memory = 119537664
+2022-11-19 09:50:20	Dump the side-table for tag: 1 with group count: 17 into file: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-50-16_085_1048547187133742550-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile41--.hashtable
+2022-11-19 09:50:20	Uploaded 1 File to: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-50-16_085_1048547187133742550-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile41--.hashtable (861 bytes)
+2022-11-19 09:50:20	End of local task; Time Taken: 1.055 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0058, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0058/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0058
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-11-19 09:50:30,134 Stage-3 map = 0%,  reduce = 0%
+2022-11-19 09:50:36,050 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.33 sec
+MapReduce Total cumulative CPU time: 1 seconds 330 msec
+Ended Job = job_1668868817878_0058
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.33 sec   HDFS Read: 13840 HDFS Write: 1166 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 330 msec
+OK
+11	Kruthin	kruthin@ymail.com	7459032446	BD	18-09-21	WD	Wednesday	4pm
+17	Harish	hariish@gmail.com	9007487654	AI	18-09-21	WD	Wednesday	4pm
+23	Anish	anish@gmail.com	9987334456	AI	18-09-21	WD	Wednesday	4pm
+32	surya	sdev@gmail.com	9988647512	AI	18-09-21	WD	Wednesday	4pm
+54	Aniket	fdeee@gamil.com	9879700067	PY	18-09-21	WD	Wednesday	4pm
+75	Anukul	fdasede@gamil.com	9879711047	PY	18-09-21	WD	Wednesday	4pm
+80	madhu	madhu123@gmail.com	8678567887	BD	18-09-21	WD	Wednesday	4pm
+85	jasmin	jasmin@gmail.com 	9765056123	PY	18-09-21	WD	Wednesday	4pm
+92	jawali	jawali@gmail.com	9078676234	AI	18-09-21	WD	Wednesday	4pm
+98	vijay	vijay@gmail.com	9865076234	FSD	18-09-21	WD	Wednesday	4pm
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	18-09-21	WD	Wednesday	4pm
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	18-09-21	WD	Wednesday	4pm
+117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY	18-09-21	WD	Wednesday	4pm
+123	harsha	cody.beer@yahoo.com	9988776655	DS	18-09-21	WD	Wednesday	4pm
+130	nehal	nehal@gmail.com	9874555212	BD	18-09-21	WD	Wednesday	4pm
+136	sumedh	sum@gmail.com	1789984752	FSD	18-09-21	WD	Wednesday	4pm
+143	rushali	rush@gmail.com	1233326545	FSD	18-09-21	WD	Wednesday	4pm
+Time taken: 22.856 seconds, Fetched: 17 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,payment_mode FROM enroll where payment_mode='Phonepe';
+Query ID = root_20221119095050_9dbf93c4-58a6-4168-8da9-ad7a8e312287
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0059, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0059/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0059
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:50:49,078 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:50:54,460 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.63 sec
+MapReduce Total cumulative CPU time: 1 seconds 630 msec
+Ended Job = job_1668868817878_0059
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.63 sec   HDFS Read: 10553 HDFS Write: 505 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 630 msec
+OK
+6	Maneesh	maneesh@gmail.com	9963555228	BD	Phonepe
+19	Bindu	bindu@gmail.com	9007483120	PY	Phonepe
+32	surya	sdev@gmail.com	9988647512	AI	Phonepe
+47	archita	archusen@gmail.com	2123113322	BD	Phonepe
+78	krishna	krishna@gmail.com	7890609876	DS	Phonepe
+80	madhu	madhu123@gmail.com	8678567887	BD	Phonepe
+115	sasuke	josiane.steuber@hotmail.com	9002289922	PY	Phonepe
+125	ravi	trudie49@yahoo.com	7289890976	 DS	Phonepe
+132	sudhir	sud@gmail.com	9988647112	AI	Phonepe
+140	rajesh	rajesh@gmail.com	2278698745	DS	Phonepe
+Time taken: 17.578 seconds, Fetched: 10 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,payment_mode FROM enroll where payment_mode='Googlepay';
+Query ID = root_20221119095050_760d971e-ba74-47eb-b220-ab607c8d56c6
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0060, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0060/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0060
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:51:04,188 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:51:10,939 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 0.79 sec
+MapReduce Total cumulative CPU time: 790 msec
+Ended Job = job_1668868817878_0060
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 0.79 sec   HDFS Read: 10566 HDFS Write: 530 SUCCESS
+Total MapReduce CPU Time Spent: 790 msec
+OK
+11	Kruthin	kruthin@ymail.com	7459032446	BD	Googlepay
+22	Praveen	praveen@gmail.com	9988775632	FSD	Googlepay
+54	Aniket	fdeee@gamil.com	9879700067	PY	Googlepay
+82	sravanthi	srav123@gmail.com	8765056767	DS	Googlepay
+84	pawan	pawan@gmail.com	8765321789	DS	Googlepay
+85	jasmin	jasmin@gmail.com 	9765056123	PY	Googlepay
+87	kajal	kajal@gmail.com	8767898760	AI	Googlepay
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	Googlepay
+123	harsha	cody.beer@yahoo.com	9988776655	DS	Googlepay
+136	sumedh	sum@gmail.com	1789984752	FSD	Googlepay
+Time taken: 18.546 seconds, Fetched: 10 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,payment_mode FROM enroll where payment_mode='Card';
+Query ID = root_20221119095151_2b6b6318-1fff-48f1-a5fa-1071c9d63cdb
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0061, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0061/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0061
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:51:23,033 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:51:30,929 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.72 sec
+MapReduce Total cumulative CPU time: 1 seconds 720 msec
+Ended Job = job_1668868817878_0061
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.72 sec   HDFS Read: 10544 HDFS Write: 486 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 720 msec
+OK
+13	Nikhil	nikhil@gmail.com	8765003641	PY	Card
+23	Anish	anish@gmail.com	9987334456	AI	Card
+36	sameer	sam678@gmail.com	1986984752	FSD	Card
+65	kiran	aassd21@gamil.com	9979778567	FSD	Card
+89	santhosh	kumar@gmail.com	9095056789	FSD	Card
+92	jawali	jawali@gmail.com	9078676234	AI	Card
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	Card
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	Card
+117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY	Card
+129	raja	rajad65@gmail.com	1122334499	DS	Card
+Time taken: 17.854 seconds, Fetched: 10 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,payment_mode FROM enroll where payment_mode='Paytm';
+Query ID = root_20221119095151_a498dd04-053e-41d3-bab9-a70e91de16f7
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0062, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0062/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0062
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:51:42,251 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:51:50,958 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.44 sec
+MapReduce Total cumulative CPU time: 1 seconds 440 msec
+Ended Job = job_1668868817878_0062
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.44 sec   HDFS Read: 10554 HDFS Write: 543 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 440 msec
+OK
+17	Harish	hariish@gmail.com	9007487654	AI	Paytm
+30	neha	nehaghosh@gmail.com	9874563212	BD	Paytm
+40	rajiv	raj8@gmail.com	2265998745	DS	Paytm
+75	Anukul	fdasede@gamil.com	9879711047	PY	Paytm
+76	santosh	santoshkumar@gamil.com	9133508789	BD	Paytm
+100	rohithsharma	hitman@gmail.com	9026426426	BD	Paytm
+101	kareem	kareemv46@gmail.com	9876543212	BD	Paytm
+119	faiz shaik	erin37@hotmail.com	8909090909	 FSD	Paytm
+126	santosh	san@gmail.com	9587632522	DS	Paytm
+135	rutvika	rut@gmail.com	3336325875	PY	Paytm
+143	rushali	rush@gmail.com	1233326545	FSD	Paytm
+Time taken: 20.043 seconds, Fetched: 11 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,payment_mode FROM enroll where payment_mode='Cash';
+Query ID = root_20221119095151_caddd179-ea59-440b-a20d-f7d6a4c9ed92
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0063, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0063/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0063
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:52:03,238 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:52:10,938 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.48 sec
+MapReduce Total cumulative CPU time: 1 seconds 480 msec
+Ended Job = job_1668868817878_0063
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.48 sec   HDFS Read: 10551 HDFS Write: 484 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 480 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD	Cash
+16	Harinath	harinath@gmail.com	7656349012	BD	Cash
+64	Anil	fdeeede@gamil.com	9879700047	PY	Cash
+95	prabhas	prabhas@gmail.com	9085076234	PY	Cash
+96	malliswari	malli@gmail.com	8765076678	DS	Cash
+98	vijay	vijay@gmail.com	9865076234	FSD	Cash
+107	Hercules	sigurd_schmidt38@yahoo.com	6239097648	BD	Cash
+121	Sameer	deondre71@hotmail.com	8765432190	 AI	Cash
+130	nehal	nehal@gmail.com	9874555212	BD	Cash
+137	rahil	rahil@gmail.com	8466998898	BD	Cash
+Time taken: 20.917 seconds, Fetched: 10 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,status FROM enroll where status='Not enrolled';
+Query ID = root_20221119095252_4dbdf457-e7ec-4eb9-9c98-6c8924083253
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0064, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0064/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0064
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:52:22,552 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:52:29,933 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.13 sec
+MapReduce Total cumulative CPU time: 1 seconds 130 msec
+Ended Job = job_1668868817878_0064
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.13 sec   HDFS Read: 10577 HDFS Write: 656 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 130 msec
+OK
+4	"Anusha"""	anu@gmail.com	7645092347	DS	Not enrolled
+27	amol	amol234@gmail.com	2398754166	AI	Not enrolled
+29	ram	rd65@gmail.com	1122334455	DS	Not enrolled
+35	rutuja	rutu49@gmail.com	4596325875	PY	Not enrolled
+37	rahul	rarul99@gmail.com	3366998898	BD	Not enrolled
+43	ruhi	ruhujain@gmail.com	1233216545	FSD	Not enrolled
+82	sravanthi	srav123@gmail.com	8765056767	DS	Not enrolled
+92	jawali	jawali@gmail.com	9078676234	AI	Not enrolled
+96	malliswari	malli@gmail.com	8765076678	DS	Not enrolled
+113	itachi	idell12@yahoo.com	8725436372	 AI	Not enrolled
+127	punam	punam4@gmail.com	2398754132	AI	Not enrolled
+147	sonal	sonal3422@gmail.com	6563113322	BD	Not enrolled
+Time taken: 16.893 seconds, Fetched: 12 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,status FROM enroll where status='Enrolled';
+Query ID = root_20221119095252_a43d9e37-d29f-44f9-acf8-78ecbe1c6ea2
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0065, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0065/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0065
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:52:42,089 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:52:47,412 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.25 sec
+MapReduce Total cumulative CPU time: 1 seconds 250 msec
+Ended Job = job_1668868817878_0065
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.25 sec   HDFS Read: 10556 HDFS Write: 2285 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 250 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD	Enrolled
+6	Maneesh	maneesh@gmail.com	9963555228	BD	Enrolled
+11	Kruthin	kruthin@ymail.com	7459032446	BD	Enrolled
+13	Nikhil	nikhil@gmail.com	8765003641	PY	Enrolled
+16	Harinath	harinath@gmail.com	7656349012	BD	Enrolled
+17	Harish	hariish@gmail.com	9007487654	AI	Enrolled
+19	Bindu	bindu@gmail.com	9007483120	PY	Enrolled
+22	Praveen	praveen@gmail.com	9988775632	FSD	Enrolled
+23	Anish	anish@gmail.com	9987334456	AI	Enrolled
+26	trupti	tc@gmail.com	9587632584	DS	Enrolled
+30	neha	nehaghosh@gmail.com	9874563212	BD	Enrolled
+32	surya	sdev@gmail.com	9988647512	AI	Enrolled
+36	sameer	sam678@gmail.com	1986984752	FSD	Enrolled
+40	rajiv	raj8@gmail.com	2265998745	DS	Enrolled
+47	archita	archusen@gmail.com	2123113322	BD	Enrolled
+54	Aniket	fdeee@gamil.com	9879700067	PY	Enrolled
+64	Anil	fdeeede@gamil.com	9879700047	PY	Enrolled
+65	kiran	aassd21@gamil.com	9979778567	FSD	Enrolled
+75	Anukul	fdasede@gamil.com	9879711047	PY	Enrolled
+76	santosh	santoshkumar@gamil.com	9133508789	BD	Enrolled
+78	krishna	krishna@gmail.com	7890609876	DS	Enrolled
+80	madhu	madhu123@gmail.com	8678567887	BD	Enrolled
+84	pawan	pawan@gmail.com	8765321789	DS	Enrolled
+85	jasmin	jasmin@gmail.com 	9765056123	PY	Enrolled
+87	kajal	kajal@gmail.com	8767898760	AI	Enrolled
+89	santhosh	kumar@gmail.com	9095056789	FSD	Enrolled
+95	prabhas	prabhas@gmail.com	9085076234	PY	Enrolled
+98	vijay	vijay@gmail.com	9865076234	FSD	Enrolled
+100	rohithsharma	hitman@gmail.com	9026426426	BD	Enrolled
+101	kareem	kareemv46@gmail.com	9876543212	BD	Enrolled
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	Enrolled
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	Enrolled
+107	Hercules	sigurd_schmidt38@yahoo.com	6239097648	BD	Enrolled
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	Enrolled
+115	sasuke	josiane.steuber@hotmail.com	9002289922	PY	Enrolled
+119	faiz shaik	erin37@hotmail.com	8909090909	 FSD	Enrolled
+123	harsha	cody.beer@yahoo.com	9988776655	DS	Enrolled
+125	ravi	trudie49@yahoo.com	7289890976	 DS	Enrolled
+129	raja	rajad65@gmail.com	1122334499	DS	Enrolled
+130	nehal	nehal@gmail.com	9874555212	BD	Enrolled
+135	rutvika	rut@gmail.com	3336325875	PY	Enrolled
+137	rahil	rahil@gmail.com	8466998898	BD	Enrolled
+140	rajesh	rajesh@gmail.com	2278698745	DS	Enrolled
+143	rushali	rush@gmail.com	1233326545	FSD	Enrolled
+Time taken: 18.479 seconds, Fetched: 44 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,payment_status FROM enroll where payment_status='Paid';
+Query ID = root_20221119095252_2bc5a4bf-8864-420a-bed5-145947f412f2
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0066, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0066/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0066
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:52:58,401 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:53:04,752 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.33 sec
+MapReduce Total cumulative CPU time: 1 seconds 330 msec
+Ended Job = job_1668868817878_0066
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.33 sec   HDFS Read: 10551 HDFS Write: 822 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 330 msec
+OK
+22	Praveen	praveen@gmail.com	9988775632	FSD	Paid
+30	neha	nehaghosh@gmail.com	9874563212	BD	Paid
+36	sameer	sam678@gmail.com	1986984752	FSD	Paid
+40	rajiv	raj8@gmail.com	2265998745	DS	Paid
+84	pawan	pawan@gmail.com	8765321789	DS	Paid
+85	jasmin	jasmin@gmail.com 	9765056123	PY	Paid
+87	kajal	kajal@gmail.com	8767898760	AI	Paid
+98	vijay	vijay@gmail.com	9865076234	FSD	Paid
+100	rohithsharma	hitman@gmail.com	9026426426	BD	Paid
+107	Hercules	sigurd_schmidt38@yahoo.com	6239097648	BD	Paid
+115	sasuke	josiane.steuber@hotmail.com	9002289922	PY	Paid
+119	faiz shaik	erin37@hotmail.com	8909090909	 FSD	Paid
+125	ravi	trudie49@yahoo.com	7289890976	 DS	Paid
+129	raja	rajad65@gmail.com	1122334499	DS	Paid
+130	nehal	nehal@gmail.com	9874555212	BD	Paid
+136	sumedh	sum@gmail.com	1789984752	FSD	Paid
+140	rajesh	rajesh@gmail.com	2278698745	DS	Paid
+Time taken: 17.268 seconds, Fetched: 17 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course,payment_status FROM enroll where payment_status='Pending';
+Query ID = root_20221119095353_9fc36483-5d78-4c15-aebc-336c52ae27f3
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0067, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0067/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0067
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:53:46,280 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:53:51,476 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.15 sec
+MapReduce Total cumulative CPU time: 1 seconds 150 msec
+Ended Job = job_1668868817878_0067
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.15 sec   HDFS Read: 10560 HDFS Write: 1582 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 150 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD	Pending
+6	Maneesh	maneesh@gmail.com	9963555228	BD	Pending
+11	Kruthin	kruthin@ymail.com	7459032446	BD	Pending
+13	Nikhil	nikhil@gmail.com	8765003641	PY	Pending
+16	Harinath	harinath@gmail.com	7656349012	BD	Pending
+17	Harish	hariish@gmail.com	9007487654	AI	Pending
+19	Bindu	bindu@gmail.com	9007483120	PY	Pending
+23	Anish	anish@gmail.com	9987334456	AI	Pending
+26	trupti	tc@gmail.com	9587632584	DS	Pending
+47	archita	archusen@gmail.com	2123113322	BD	Pending
+54	Aniket	fdeee@gamil.com	9879700067	PY	Pending
+64	Anil	fdeeede@gamil.com	9879700047	PY	Pending
+65	kiran	aassd21@gamil.com	9979778567	FSD	Pending
+75	Anukul	fdasede@gamil.com	9879711047	PY	Pending
+76	santosh	santoshkumar@gamil.com	9133508789	BD	Pending
+78	krishna	krishna@gmail.com	7890609876	DS	Pending
+80	madhu	madhu123@gmail.com	8678567887	BD	Pending
+89	santhosh	kumar@gmail.com	9095056789	FSD	Pending
+95	prabhas	prabhas@gmail.com	9085076234	PY	Pending
+101	kareem	kareemv46@gmail.com	9876543212	BD	Pending
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	Pending
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	Pending
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	Pending
+117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY	Pending
+121	Sameer	deondre71@hotmail.com	8765432190	 AI	Pending
+123	harsha	cody.beer@yahoo.com	9988776655	DS	Pending
+126	santosh	san@gmail.com	9587632522	DS	Pending
+132	sudhir	sud@gmail.com	9988647112	AI	Pending
+135	rutvika	rut@gmail.com	3336325875	PY	Pending
+137	rahil	rahil@gmail.com	8466998898	BD	Pending
+143	rushali	rush@gmail.com	1233326545	FSD	Pending
+Time taken: 15.33 seconds, Fetched: 31 row(s)
+hive> 

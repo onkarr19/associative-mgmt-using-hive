@@ -1,0 +1,218 @@
+
+    >  SELECT * from batch b join enroll e on(b.id=e.id) where b.course='BD';
+Query ID = root_20221119095858_fe191bc8-8610-4459-ac18-dad1638d4bc3
+Total jobs = 1
+Execution log at: /tmp/root/root_20221119095858_fe191bc8-8610-4459-ac18-dad1638d4bc3.log
+2022-11-19 09:58:12	Starting to launch local task to process map join;	maximum memory = 119537664
+2022-11-19 09:58:13	Dump the side-table for tag: 0 with group count: 13 into file: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-58-08_986_7846063271063911722-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile50--.hashtable
+2022-11-19 09:58:13	Uploaded 1 File to: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-58-08_986_7846063271063911722-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile50--.hashtable (1448 bytes)
+2022-11-19 09:58:13	End of local task; Time Taken: 0.971 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0072, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0072/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0072
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-11-19 09:58:22,507 Stage-3 map = 0%,  reduce = 0%
+2022-11-19 09:58:27,911 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.22 sec
+MapReduce Total cumulative CPU time: 1 seconds 220 msec
+Ended Job = job_1668868817878_0072
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.22 sec   HDFS Read: 15834 HDFS Write: 2143 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 220 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD	16-09-21	WD	Monday	10am	Online	1	Dhruvana	dhru@gmail.com	9618530448	BD	Enrolled	Cash	3	1	18-09-21	Pending	2	27000
+6	Maneesh	maneesh@gmail.com	9963555228	BD	16-09-21	WD	Monday	10am	Classroom	6	Maneesh	maneesh@gmail.com	9963555228	BD	Enrolled	Phonepe	3	1	19-09-21	Pending	2	27000
+11	Kruthin	kruthin@ymail.com	7459032446	BD	18-09-21	WD	Wednesday	4pm	Online	11	Kruthin	kruthin@ymail.com	7459032446	BD	Enrolled	Googlepay	3	1	20-09-21	Pending	2	27000
+16	Harinath	harinath@gmail.com	7656349012	BD	16-09-21	WD	Monday	10am	Classroom	16	Harinath	harinath@gmail.com	7656349012	BD	Enrolled	Cash	3	1	20-09-21	Pending	2	27000
+30	neha	nehaghosh@gmail.com	9874563212	BD	16-09-21	WD	Monday	10am	Online	30	neha	nehaghosh@gmail.com	9874563212	BD	Enrolled	Paytm	1	1	21-09-21	Paid027000
+47	archita	archusen@gmail.com	2123113322	BD	16-09-21	WD	Monday	10am	Classroom	47	archita	archusen@gmail.com	2123113322	BD	Enrolled	Phonepe	3	1	18-09-21	Pending	2	27000
+76	santosh	santoshkumar@gamil.com	9133508789	BD	21-09-21	WE	Saturday	10am	Classroom	76	santosh	santoshkumar@gamil.com	9133508789	BD	Enrolled	Paytm	3	1	23-09-21	Pending	2	27000
+80	madhu	madhu123@gmail.com	8678567887	BD	18-09-21	WD	Wednesday	4pm	Classroom	80	madhu	madhu123@gmail.com	8678567887	BD	Enrolled	Phonepe	2	1	25-09-21	Pending	1	27000
+100	rohithsharma	hitman@gmail.com	9026426426	BD	21-09-21	WE	Saturday	10am	Online	100	rohithsharma	hitman@gmail.com	9026426426	BD	Enrolled	Paytm	1	1	02-09-21	Paid	0	27000
+101	kareem	kareemv46@gmail.com	9876543212	BD	16-09-21	WD	Monday	10am	Classroom	101	kareem	kareemv46@gmail.com	9876543212	BD	Enrolled	Paytm	3	1	03-09-21	Pending	2	27000
+107	Hercules	sigurd_schmidt38@yahoo.com	6239097648	BD	16-09-21	WD	Monday	10am	Classroom	107	Hercules	sigurd_schmidt38@yahoo.com	6239097648	BD	Enrolled	CashNULL	NULL		Paid	NULL	34000
+130	nehal	nehal@gmail.com	9874555212	BD	18-09-21	WD	Wednesday	4pm	Classroom	130	nehal	nehal@gmail.com	9874555212	BD	Enrolled	Cash	NULL	NULL		Paid	NULL27000
+137	rahil	rahil@gmail.com	8466998898	BD	21-09-21	WE	Saturday	10am	Classroom	137	rahil	rahil@gmail.com	8466998898	BD	Enrolled	Cash	3	1	16-09-21	Pending	2	27000
+Time taken: 21.941 seconds, Fetched: 13 row(s)
+hive> 
+    > SELECT * FROM enroll e JOIN batch b ON(e.id=b.id) where e.course='FSD';
+Query ID = root_20221119095858_7296639c-5f13-4235-8606-08447ee0a556
+Total jobs = 1
+Execution log at: /tmp/root/root_20221119095858_7296639c-5f13-4235-8606-08447ee0a556.log
+2022-11-19 09:58:34	Starting to launch local task to process map join;	maximum memory = 119537664
+2022-11-19 09:58:35	Dump the side-table for tag: 1 with group count: 51 into file: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-58-30_955_4477884145997297084-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile61--.hashtable
+2022-11-19 09:58:35	Uploaded 1 File to: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-58-30_955_4477884145997297084-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile61--.hashtable (5076 bytes)
+2022-11-19 09:58:35	End of local task; Time Taken: 1.065 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0073, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0073/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0073
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-11-19 09:58:44,501 Stage-3 map = 0%,  reduce = 0%
+2022-11-19 09:58:50,947 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.16 sec
+MapReduce Total cumulative CPU time: 1 seconds 160 msec
+Ended Job = job_1668868817878_0073
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.16 sec   HDFS Read: 16030 HDFS Write: 1114 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 160 msec
+OK
+22	Praveen	praveen@gmail.com	9988775632	FSD	Enrolled	Googlepay	1	1	21-09-21	Paid	0	23000	22	Praveen	praveen@gmail.com	9988775632	FSD	16-09-21	WD	Monday	10am	Classroom
+36	sameer	sam678@gmail.com	1986984752	FSD	Enrolled	Card	1	1	20-09-21	Paid	0	23000	36	sameer	sam678@gmail.com	1986984752	FSD	16-09-21	WD	Monday	10am	Online
+65	kiran	aassd21@gamil.com	9979778567	FSD	Enrolled	Card	3	1	21-09-21	Pending	2	23000	65	kiran	aassd21@gamil.com	9979778567	FSD	16-09-21	WD	Monday	10am	Classroom
+89	santhosh	kumar@gmail.com	9095056789	FSD	Enrolled	Card	3	1	13-09-21	Pending	2	23000	89	santhosh	kumar@gmail.com	9095056789	FSD	16-09-21	WD	Monday	10am	Online
+98	vijay	vijay@gmail.com	9865076234	FSD	Enrolled	Cash	1	1	01-09-21	Paid	0	23000	98	vijay	vijay@gmail.com	9865076234	FSD	18-09-21	WD	Wednesday	4pm	Online
+136	sumedh	sum@gmail.com	1789984752	FSD	Enrolled 	Googlepay	NULL	NULL		Paid	NULL	23000	136	sumedh	sum@gmail.com	1789984752	FSD	18-09-21	WD	Wednesday	4pm	Online
+143	rushali	rush@gmail.com	1233326545	FSD	Enrolled	Paytm	2	1	11-09-21	Pending	1	23000	143	rushali	rush@gmail.com	1233326545	FSD	18-09-21	WD	Wednesday	4pm	Classroom
+Time taken: 21.098 seconds, Fetched: 7 row(s)
+hive> 
+    > SELECT * FROM enroll e JOIN batch b ON(e.id=b.id) where e.course='AI';
+Query ID = root_20221119095858_b8dccbdb-0003-4591-9559-433639de5204
+Total jobs = 1
+Execution log at: /tmp/root/root_20221119095858_b8dccbdb-0003-4591-9559-433639de5204.log
+2022-11-19 09:58:55	Starting to launch local task to process map join;	maximum memory = 119537664
+2022-11-19 09:58:56	Dump the side-table for tag: 1 with group count: 51 into file: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-58-52_090_6070579434274623536-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile71--.hashtable
+2022-11-19 09:58:56	Uploaded 1 File to: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-58-52_090_6070579434274623536-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile71--.hashtable (5076 bytes)
+2022-11-19 09:58:56	End of local task; Time Taken: 1.173 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0074, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0074/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0074
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-11-19 09:59:07,056 Stage-3 map = 0%,  reduce = 0%
+2022-11-19 09:59:13,909 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.61 sec
+MapReduce Total cumulative CPU time: 1 seconds 610 msec
+Ended Job = job_1668868817878_0074
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.61 sec   HDFS Read: 16027 HDFS Write: 1113 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 610 msec
+OK
+17	Harish	hariish@gmail.com	9007487654	AI	Enrolled	Paytm	2	1	21-09-21	Pending	1	34000	17	Harish	hariish@gmail.com	9007487654	AI	18-09-21	WD	Wednesday	4pm	Classroom
+23	Anish	anish@gmail.com	9987334456	AI	Enrolled	Card	3	1	21-09-21	Pending	2	34000	23	Anish	anish@gmail.com	9987334456	AI	18-09-21	WD	Wednesday	4pm	Classroom
+32	surya	sdev@gmail.com	9988647512	AI	Enrolled	Phonepe	1	1	19-09-21	Paid 	0	34000	32	surya	sdev@gmail.com	9988647512	AI	18-09-21	WD	Wednesday	4pm	Online
+87	kajal	kajal@gmail.com	8767898760	AI	Enrolled	Googlepay	1	1	12-09-21	Paid	0	34000	87	kajal	kajal@gmail.com	8767898760	AI	21-09-21	WE	Saturday	10am	Online
+92	jawali	jawali@gmail.com	9078676234	AI	Not enrolled	Card	NULL	NULL			NULL	NULL	92	jawali	jawali@gmail.com	9078676234	AI	18-09-21	WD	Wednesday	4pm	Online
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	Enrolled	Card	3	1	04-09-21	Pending	3	34000	105	mooner	bernard.jenkins96@gmail.com	765437289	AI	21-09-21	WE	Saturday	10am	Classroom
+132	sudhir	sud@gmail.com	9988647112	AI	Enrolled 	Phonepe	3	1		Pending	2	34000	132	sudhir	sud@gmail.com	9988647112	AI	21-09-21	WE	Saturday	10am	Classroom
+Time taken: 23.972 seconds, Fetched: 7 row(s)
+hive> 
+    > SELECT * FROM enroll e JOIN batch b ON(e.id=b.id) where e.course='PY';
+Query ID = root_20221119095959_2fca34bd-b975-4db2-9456-d639404e3e2a
+Total jobs = 1
+Execution log at: /tmp/root/root_20221119095959_2fca34bd-b975-4db2-9456-d639404e3e2a.log
+2022-11-19 09:59:19	Starting to launch local task to process map join;	maximum memory = 119537664
+2022-11-19 09:59:20	Dump the side-table for tag: 1 with group count: 51 into file: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-59-16_100_2464500097284474719-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile81--.hashtable
+2022-11-19 09:59:20	Uploaded 1 File to: file:/tmp/root/d80661ca-3e79-4551-92ae-0b05da60d72b/hive_2022-11-19_09-59-16_100_2464500097284474719-1/-local-10003/HashTable-Stage-3/MapJoin-mapfile81--.hashtable (5076 bytes)
+2022-11-19 09:59:20	End of local task; Time Taken: 1.024 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0075, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0075/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0075
+Hadoop job information for Stage-3: number of mappers: 1; number of reducers: 0
+2022-11-19 09:59:30,695 Stage-3 map = 0%,  reduce = 0%
+2022-11-19 09:59:36,178 Stage-3 map = 100%,  reduce = 0%, Cumulative CPU 1.29 sec
+MapReduce Total cumulative CPU time: 1 seconds 290 msec
+Ended Job = job_1668868817878_0075
+MapReduce Jobs Launched: 
+Stage-Stage-3: Map: 1   Cumulative CPU: 1.29 sec   HDFS Read: 16027 HDFS Write: 2004 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 290 msec
+OK
+13	Nikhil	nikhil@gmail.com	8765003641	PY	Enrolled	Card	3	1	21-09-21	Pending	2	19000	13	Nikhil	nikhil@gmail.com	8765003641	PY	21-09-21	WE	Saturday	10am	Classroom
+19	Bindu	bindu@gmail.com	9007483120	PY	Enrolled	Phonepe	2	1	19-09-21	Pending	0	19000	19	Bindu	bindu@gmail.com	9007483120	PY	21-09-21	WE	Saturday	10amClassroom
+54	Aniket	fdeee@gamil.com	9879700067	PY	Enrolled	Googlepay	2	1	19-09-21	Pending	1	19000	54	Aniket	fdeee@gamil.com	9879700067	PY	18-09-21	WD	Wednesday	4pm	Classroom
+64	Anil	fdeeede@gamil.com	9879700047	PY	Enrolled	Cash	3	1	20-09-21	Pending	2	19000	64	Anil	fdeeede@gamil.com	9879700047	PY	21-09-21	WE	Saturday	10am	Classroom
+75	Anukul	fdasede@gamil.com	9879711047	PY	Enrolled	Paytm	3	1	22-09-21	Pending	2	19000	75	Anukul	fdasede@gamil.com	9879711047	PY	18-09-21	WD	Wednesday	4pm	Classroom
+85	jasmin	jasmin@gmail.com 	9765056123	PY	Enrolled	Googlepay	1	1	30-09-21	Paid	0	19000	85	jasmin	jasmin@gmail.com 	9765056123	PY	18-09-21	WD	Wednesday	4pm	Online
+95	prabhas	prabhas@gmail.com	9085076234	PY	Enrolled	Cash	3	1	24-09-21	Pending	2	19000	95	prabhas	prabhas@gmail.com	9085076234	PY	21-09-21	WE	Saturday	10am	Online
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	Enrolled	Card	2	1	04-09-21	Pending	1	19000	103	sam	 shane.wisozk@hotmail.com	NULL	PY	18-09-21	WD	Wednesday	4pm	Online
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	Enrolled	Googlepay	2	1	12-09-21	Pending	1	19000	111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	18-09-21	WD	Wednesday	4pm	Classroom
+115	sasuke	josiane.steuber@hotmail.com	9002289922	PY	Enrolled	Phonepe	NULL	NULL		Paid	NULL	19000	115	sasuke	josiane.steuber@hotmail.com	9002289922	PY	16-09-21	WD	Monday	10am	Classroom
+117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY	Enrolled 	Card	3	1	20-09-21	Pending	2	19000	117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY	18-09-21	WD	Wednesday	4pm	Classroom
+135	rutvika	rut@gmail.com	3336325875	PY	Enrolled	Paytm	2	1	15-09-21	Pending	1	19000	135	rutvika	rut@gmail.com	3336325875	PY	16-09-21	WD	Monday	10am	Classroom
+Time taken: 22.217 seconds, Fetched: 12 row(s)
+hive> 
+    > SELECT * FROM enroll where status='Enrolled' and course='BD';
+Query ID = root_20221119095959_8c8c1433-5da6-4308-a25f-c0061a849c46
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0076, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0076/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0076
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:59:47,426 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:59:53,658 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.37 sec
+MapReduce Total cumulative CPU time: 1 seconds 370 msec
+Ended Job = job_1668868817878_0076
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.37 sec   HDFS Read: 11199 HDFS Write: 1128 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 370 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD	Enrolled	Cash	3	1	18-09-21	Pending	2	27000
+6	Maneesh	maneesh@gmail.com	9963555228	BD	Enrolled	Phonepe	3	1	19-09-21	Pending	2	27000
+11	Kruthin	kruthin@ymail.com	7459032446	BD	Enrolled	Googlepay	3	1	20-09-21	Pending	2	27000
+16	Harinath	harinath@gmail.com	7656349012	BD	Enrolled	Cash	3	1	20-09-21	Pending	2	27000
+30	neha	nehaghosh@gmail.com	9874563212	BD	Enrolled	Paytm	1	1	21-09-21	Paid	0	27000
+47	archita	archusen@gmail.com	2123113322	BD	Enrolled	Phonepe	3	1	18-09-21	Pending	2	27000
+76	santosh	santoshkumar@gamil.com	9133508789	BD	Enrolled	Paytm	3	1	23-09-21	Pending	2	27000
+80	madhu	madhu123@gmail.com	8678567887	BD	Enrolled	Phonepe	2	1	25-09-21	Pending	1	27000
+100	rohithsharma	hitman@gmail.com	9026426426	BD	Enrolled	Paytm	1	1	02-09-21	Paid	0	27000
+101	kareem	kareemv46@gmail.com	9876543212	BD	Enrolled	Paytm	3	1	03-09-21	Pending	2	27000
+107	Hercules	sigurd_schmidt38@yahoo.com	6239097648	BD	Enrolled	Cash	NULL	NULL		Paid	NULL	34000
+130	nehal	nehal@gmail.com	9874555212	BD	Enrolled	Cash	NULL	NULL		Paid	NULL	27000
+137	rahil	rahil@gmail.com	8466998898	BD	Enrolled	Cash	3	1	16-09-21	Pending	2	27000
+Time taken: 17.563 seconds, Fetched: 13 row(s)
+hive> 
+    > SELECT * FROM enroll where status='Enrolled' and course='FSD';
+Query ID = root_20221119095959_de0f0fd4-5dc1-4175-8ce0-ef972033d01b
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0077, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0077/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0077
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 10:00:05,200 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 10:00:12,594 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.39 sec
+MapReduce Total cumulative CPU time: 1 seconds 390 msec
+Ended Job = job_1668868817878_0077
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.39 sec   HDFS Read: 11202 HDFS Write: 508 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 390 msec
+OK
+22	Praveen	praveen@gmail.com	9988775632	FSD	Enrolled	Googlepay	1	1	21-09-21	Paid	0	23000
+36	sameer	sam678@gmail.com	1986984752	FSD	Enrolled	Card	1	1	20-09-21	Paid	0	23000
+65	kiran	aassd21@gamil.com	9979778567	FSD	Enrolled	Card	3	1	21-09-21	Pending	2	23000
+89	santhosh	kumar@gmail.com	9095056789	FSD	Enrolled	Card	3	1	13-09-21	Pending	2	23000
+98	vijay	vijay@gmail.com	9865076234	FSD	Enrolled	Cash	1	1	01-09-21	Paid	0	23000
+143	rushali	rush@gmail.com	1233326545	FSD	Enrolled	Paytm	2	1	11-09-21	Pending	1	23000
+Time taken: 17.715 seconds, Fetched: 6 row(s)
+hive> 
+    > SELECT * FROM enroll where status='Enrolled' and course='AI';
+Query ID = root_20221119100000_be404104-c857-43ca-bd25-16558ac87fa8
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0078, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0078/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0078
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 10:00:29,075 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 10:00:35,395 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.35 sec
+MapReduce Total cumulative CPU time: 1 seconds 350 msec
+Ended Job = job_1668868817878_0078
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.35 sec   HDFS Read: 11199 HDFS Write: 429 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 350 msec
+OK
+17	Harish	hariish@gmail.com	9007487654	AI	Enrolled	Paytm	2	1	21-09-21	Pending	1	34000
+23	Anish	anish@gmail.com	9987334456	AI	Enrolled	Card	3	1	21-09-21	Pending	2	34000
+32	surya	sdev@gmail.com	9988647512	AI	Enrolled	Phonepe	1	1	19-09-21	Paid 	0	34000
+87	kajal	kajal@gmail.com	8767898760	AI	Enrolled	Googlepay	1	1	12-09-21	Paid	0	34000
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	Enrolled	Card	3	1	04-09-21	Pending	3	34000
+Time taken: 15.054 seconds, Fetched: 5 row(s)
+hive> 

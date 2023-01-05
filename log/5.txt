@@ -1,0 +1,51 @@
+
+    >  SELECT COUNT(name) FROM enroll where course="AI" and status='Enrolled';
+Query ID = root_20221119100303_2ecf0141-9ec8-4b79-84b3-33a8179051b9
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks determined at compile time: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1668868817878_0081, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0081/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0081
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2022-11-19 10:03:50,384 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 10:03:56,906 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.12 sec
+2022-11-19 10:04:04,583 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.29 sec
+MapReduce Total cumulative CPU time: 2 seconds 290 msec
+Ended Job = job_1668868817878_0081
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 2.29 sec   HDFS Read: 15266 HDFS Write: 2 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 290 msec
+OK
+5
+Time taken: 22.414 seconds, Fetched: 1 row(s)
+hive> 
+    > INSERT into table enquiry values(151,'mar','mar@gemail.com',9988998899,'BD',30000,10,'16-09-21','DD','Enrolled'),(152,'mario','mario@gemail.com',9988998899,'AI',40000,15,'18-09-21','DND','Not Enrolled');
+Query ID = root_20221119100404_70c8a089-4e24-4f26-924b-f42378013cb7
+Total jobs = 3
+Launching Job 1 out of 3
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0082, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0082/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0082
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 10:04:35,322 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 10:04:40,965 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.05 sec
+MapReduce Total cumulative CPU time: 1 seconds 50 msec
+Ended Job = job_1668868817878_0082
+Stage-4 is selected by condition resolver.
+Stage-3 is filtered out by condition resolver.
+Stage-5 is filtered out by condition resolver.
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/institute.db/enquiry/.hive-staging_hive_2022-11-19_10-04-25_103_8243387171447098394-1/-ext-10000
+Loading data to table institute.enquiry
+Table institute.enquiry stats: [numFiles=3, numRows=4, totalSize=11783, rawDataSize=282]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.05 sec   HDFS Read: 5646 HDFS Write: 217 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 50 msec
+OK
+Time taken: 18.308 seconds
+hive> 

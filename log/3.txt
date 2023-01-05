@@ -1,0 +1,133 @@
+
+    >  SELECT id,name,email,mobile,course,total_installment,installment_paid,next_installment_date,payment_status,installment_left, final_amount FROM enroll where installment_left=1;
+Query ID = root_20221119095555_3c41a809-511c-4d75-abb6-d5665cf25b3e
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0068, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0068/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0068
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:56:08,965 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:56:14,940 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.24 sec
+MapReduce Total cumulative CPU time: 1 seconds 240 msec
+Ended Job = job_1668868817878_0068
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.24 sec   HDFS Read: 10935 HDFS Write: 644 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 240 msec
+OK
+17	Harish	hariish@gmail.com	9007487654	AI	2	1	21-09-21	Pending	1	34000
+26	trupti	tc@gmail.com	9587632584	DS	2	1	20-09-21	Pending	1	34000
+54	Aniket	fdeee@gamil.com	9879700067	PY	2	1	19-09-21	Pending	1	19000
+80	madhu	madhu123@gmail.com	8678567887	BD	2	1	25-09-21	Pending	1	27000
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	2	1	04-09-21	Pending	1	19000
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	2	1	12-09-21	Pending	1	19000
+123	harsha	cody.beer@yahoo.com	9988776655	DS	2	1	18-09-21	Pending	1	34000
+135	rutvika	rut@gmail.com	3336325875	PY	2	1	15-09-21	Pending	1	19000
+143	rushali	rush@gmail.com	1233326545	FSD	2	1	11-09-21	Pending	1	23000
+Time taken: 20.486 seconds, Fetched: 9 row(s)
+hive> 
+    > SELECT id,name,email,mobile,course FROM enroll where installment_left=2;
+Query ID = root_20221119095656_cb6ff415-7b17-41ea-b9b6-e16895a90f80
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0069, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0069/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0069
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:56:31,369 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:56:36,956 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.37 sec
+MapReduce Total cumulative CPU time: 1 seconds 370 msec
+Ended Job = job_1668868817878_0069
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.37 sec   HDFS Read: 10462 HDFS Write: 860 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 370 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD
+6	Maneesh	maneesh@gmail.com	9963555228	BD
+11	Kruthin	kruthin@ymail.com	7459032446	BD
+13	Nikhil	nikhil@gmail.com	8765003641	PY
+16	Harinath	harinath@gmail.com	7656349012	BD
+23	Anish	anish@gmail.com	9987334456	AI
+47	archita	archusen@gmail.com	2123113322	BD
+64	Anil	fdeeede@gamil.com	9879700047	PY
+65	kiran	aassd21@gamil.com	9979778567	FSD
+75	Anukul	fdasede@gamil.com	9879711047	PY
+76	santosh	santoshkumar@gamil.com	9133508789	BD
+78	krishna	krishna@gmail.com	7890609876	DS
+89	santhosh	kumar@gmail.com	9095056789	FSD
+95	prabhas	prabhas@gmail.com	9085076234	PY
+101	kareem	kareemv46@gmail.com	9876543212	BD
+117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY
+121	Sameer	deondre71@hotmail.com	8765432190	 AI
+126	santosh	san@gmail.com	9587632522	DS
+132	sudhir	sud@gmail.com	9988647112	AI
+137	rahil	rahil@gmail.com	8466998898	BD
+Time taken: 19.066 seconds, Fetched: 20 row(s)
+hive> 
+    > SELECT * FROM enroll where total_installment=2;
+Query ID = root_20221119095656_e6a0101b-4ca8-494f-a236-806613f62d7a
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0070, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0070/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0070
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:56:46,833 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:56:53,934 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.58 sec
+MapReduce Total cumulative CPU time: 1 seconds 580 msec
+Ended Job = job_1668868817878_0070
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.58 sec   HDFS Read: 11034 HDFS Write: 877 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 580 msec
+OK
+17	Harish	hariish@gmail.com	9007487654	AI	Enrolled	Paytm	2	1	21-09-21	Pending	1	34000
+19	Bindu	bindu@gmail.com	9007483120	PY	Enrolled	Phonepe	2	1	19-09-21	Pending	0	19000
+26	trupti	tc@gmail.com	9587632584	DS	Enrolled	Cash 	2	1	20-09-21	Pending	1	34000
+54	Aniket	fdeee@gamil.com	9879700067	PY	Enrolled	Googlepay	2	1	19-09-21	Pending	1	19000
+80	madhu	madhu123@gmail.com	8678567887	BD	Enrolled	Phonepe	2	1	25-09-21	Pending	1	27000
+103	sam	 shane.wisozk@hotmail.com	NULL	PY	Enrolled	Card	2	1	04-09-21	Pending	1	19000
+111	inosuke	yasmeen_cummings@yahoo.com	9767675645	PY	Enrolled	Googlepay	2	1	12-09-21	Pending	1	19000
+123	harsha	cody.beer@yahoo.com	9988776655	DS	Enrolled	Googlepay	2	1	18-09-21	Pending	1	34000
+135	rutvika	rut@gmail.com	3336325875	PY	Enrolled	Paytm	2	1	15-09-21	Pending	1	19000
+143	rushali	rush@gmail.com	1233326545	FSD	Enrolled	Paytm	2	1	11-09-21	Pending	1	23000
+Time taken: 16.925 seconds, Fetched: 10 row(s)
+hive> 
+    > SELECT * FROM enroll where total_installment=3;
+Query ID = root_20221119095757_f2698cb5-1cce-4977-8c52-7de6fb1b251d
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1668868817878_0071, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1668868817878_0071/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1668868817878_0071
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 0
+2022-11-19 09:57:28,721 Stage-1 map = 0%,  reduce = 0%
+2022-11-19 09:57:34,908 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.96 sec
+MapReduce Total cumulative CPU time: 1 seconds 960 msec
+Ended Job = job_1668868817878_0071
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1   Cumulative CPU: 1.96 sec   HDFS Read: 11034 HDFS Write: 1832 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 960 msec
+OK
+1	Dhruvana	dhru@gmail.com	9618530448	BD	Enrolled	Cash	3	1	18-09-21	Pending	2	27000
+6	Maneesh	maneesh@gmail.com	9963555228	BD	Enrolled	Phonepe	3	1	19-09-21	Pending	2	27000
+11	Kruthin	kruthin@ymail.com	7459032446	BD	Enrolled	Googlepay	3	1	20-09-21	Pending	2	27000
+13	Nikhil	nikhil@gmail.com	8765003641	PY	Enrolled	Card	3	1	21-09-21	Pending	2	19000
+16	Harinath	harinath@gmail.com	7656349012	BD	Enrolled	Cash	3	1	20-09-21	Pending	2	27000
+23	Anish	anish@gmail.com	9987334456	AI	Enrolled	Card	3	1	21-09-21	Pending	2	34000
+47	archita	archusen@gmail.com	2123113322	BD	Enrolled	Phonepe	3	1	18-09-21	Pending	2	27000
+64	Anil	fdeeede@gamil.com	9879700047	PY	Enrolled	Cash	3	1	20-09-21	Pending	2	19000
+65	kiran	aassd21@gamil.com	9979778567	FSD	Enrolled	Card	3	1	21-09-21	Pending	2	23000
+75	Anukul	fdasede@gamil.com	9879711047	PY	Enrolled	Paytm	3	1	22-09-21	Pending	2	19000
+76	santosh	santoshkumar@gamil.com	9133508789	BD	Enrolled	Paytm	3	1	23-09-21	Pending	2	27000
+78	krishna	krishna@gmail.com	7890609876	DS	Enrolled	Phonepe	3	1	24-09-21	Pending	2	34000
+89	santhosh	kumar@gmail.com	9095056789	FSD	Enrolled	Card	3	1	13-09-21	Pending	2	23000
+95	prabhas	prabhas@gmail.com	9085076234	PY	Enrolled	Cash	3	1	24-09-21	Pending	2	19000
+101	kareem	kareemv46@gmail.com	9876543212	BD	Enrolled	Paytm	3	1	03-09-21	Pending	2	27000
+105	mooner	bernard.jenkins96@gmail.com	765437289	AI	Enrolled	Card	3	1	04-09-21	Pending	3	34000
+117	john abrar	 jalyn.dare@hotmail.com	8000002345	PY	Enrolled 	Card	3	1	20-09-21	Pending	2	19000
+121	Sameer	deondre71@hotmail.com	8765432190	 AI	Enrolled 	Cash	3	1	11-09-21	Pending	2	34000
+126	santosh	san@gmail.com	9587632522	DS	Enrolled 	Paytm	3	1	17-09-21	Pending	2	34000
+132	sudhir	sud@gmail.com	9988647112	AI	Enrolled 	Phonepe	3	1		Pending	2	34000
+137	rahil	rahil@gmail.com	8466998898	BD	Enrolled	Cash	3	1	16-09-21	Pending	2	27000
+Time taken: 13.539 seconds, Fetched: 21 row(s)
+hive> 
